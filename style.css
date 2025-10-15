@@ -1,0 +1,365 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #ffffff 0%, #eeeaea 100%);
+    color: gray;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.form-box {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+}
+
+h1 {
+  text-align: center;
+  color: #0055cc;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  color: #333;
+  font-weight: 500;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #3399ff;
+  box-shadow: 0 0 4px #3399ff88;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.col {
+  flex: 1;
+}
+
+button {
+  width: 100%;
+  background: linear-gradient(to right, #0066ff, #3399ff);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 102, 255, 0.4);
+}
+
+h1, h2, h3 {
+    color: #0028aa;
+}
+
+header {
+    background-color: #0028aa;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo p {
+    font-family: 'Nosifer', cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.city p {
+    color: #ccc;
+}
+
+.search {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+
+.search svg {
+    fill: #00bcd4;
+}
+
+main {
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.destaque {
+    text-align: center;
+    padding: 50px 20px;
+    background: #333 url('caminho/para/fundo-escuro-com-textura.jpg');
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-comprar {
+    display: inline-block;
+    background-color: #0028aa;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 188, 212, 0.3);
+}
+
+.btn-comprar:hover {
+    background-color: #0097a7;
+}
+
+.lista-filmes {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filmes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.filme-card {
+    background-color: #2b2b2b;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+}
+
+.filme-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.filme-card h3 {
+    margin-top: 10px;
+    color: white;
+}
+
+.filme-card p {
+    color: #0028aa;
+}
+
+.secao-formulario {
+    display: none; 
+    padding: 40px 0;
+    width: 100%;
+    text-align: center;
+}
+
+#form-ingressos {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    color: #0028aa;
+}
+
+button[type="submit"] {
+    background-color: #0028aa;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0028aa;
+}
+
+#total-a-pagar {
+    color: #00ff00;
+}
+
+.banners {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.banner-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.banner-card {
+    flex: 1;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.banner-card img {
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    display: block; 
+}
+
+.banner-card p {
+    padding: 10px 15px;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.preco-destaque {
+    color: #0028aa; 
+    font-weight: bold;
+}
+
+
+.filtros {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.opcoes-filtro {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.opcoes-filtro select {
+    padding: 10px;
+    border: 1px solid #0028aa;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.opcoes-filtro select:focus {
+    outline: 2px solid #0028aa;
+}
+
+#form-ingressos label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0028aa;
+    text-align: left;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form-ingressos input[type="text"],
+#form-ingressos input[type="email"],
+#form-ingressos input[type="number"],
+#form-ingressos select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#form-ingressos button[type="submit"] {
+    background-color: #00bcd4;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+#form-ingressos button[type="submit"]:hover {
+    background-color: #000000;
+}
+
+.filmes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.filme-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.filme-card h3 {
+    color: #333;
+}
+
+.filme-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.detalhes-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.detalhes-btn:hover {
+    background-color: #cc5200;
+}
+
